@@ -8,8 +8,13 @@ Eine interaktive Web-Anwendung zum Lernen und Testen von medizinischen Fachbegri
 
 ## ✨ Features
 
-- **📚 30+ Medizinische Fragen**: Umfassende Fragen zu Präfixen, Suffixen und medizinischen Begriffen
-- **🎯 Multiple-Choice Format**: Einfach zu bedienende Benutzeroberfläche
+- **📚 Umfassende Prüfungsfragen**: Verschiedene Fragetypen basierend auf medizinischer Terminologie
+- **✍️ Multiple Fragetypen**: 
+  - **Multiple-Choice**: Klassische Auswahlfragen
+  - **Offene Fragen**: Freie Textantworten
+  - **Aufzählungen**: Listen mit mehreren Antworten
+  - **Zuordnungen**: Matching-Fragen
+- **📝 Freie Texteingabe**: Schreiben Sie Ihre Antworten wie auf Papier
 - **📊 Echtzeit-Fortschritt**: Verfolge deinen Fortschritt während der Prüfung
 - **✅ Sofortiges Feedback**: Erhalte sofortige Rückmeldung zu deinen Antworten mit detaillierten Erklärungen
 - **📈 Detaillierte Ergebnisse**: Siehe deine Leistung mit Prozentangaben und Statistiken
