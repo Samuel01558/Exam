@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medizinische Terminologie - Prüfung</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏥 Medizinische Terminologie</h1>
+            <h2>Interaktive Lernprüfung</h2>
+        </header>
+
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen active">
+            <div class="welcome-box">
+                <h3>Willkommen zur medizinischen Terminologie Prüfung!</h3>
+                <p>Teste dein Wissen über medizinische Begriffe, Präfixe, Suffixe und anatomische Strukturen.</p>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="info-number" id="totalQuestions">20</span>
+                        <span class="info-label">Fragen</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-number">∞</span>
+                        <span class="info-label">Versuche</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-number">📊</span>
+                        <span class="info-label">Fortschritt</span>
+                    </div>
+                </div>
+                <button class="btn btn-primary" onclick="startExam()">Prüfung starten</button>
+            </div>
+        </div>
+
+        <!-- Exam Screen -->
+        <div id="examScreen" class="screen">
+            <div class="progress-container">
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <div class="progress-text">
+                    Frage <span id="currentQuestion">1</span> von <span id="totalQuestionsExam">20</span>
+                </div>
+            </div>
+
+            <div class="score-display">
+                <span class="score-label">Punkte:</span>
+                <span class="score-value" id="scoreValue">0</span>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header">
+                    <span class="question-type" id="questionType">Multiple Choice</span>
+                    <span class="question-points" id="questionPoints">+1 Punkt</span>
+                </div>
+                
+                <div class="question-image-container" id="questionImageContainer">
+                    <img id="questionImage" src="" alt="Frage Bild">
+                </div>
+
+                <div class="question-text" id="questionText">
+                    Was bedeutet der Präfix "hyper-"?
+                </div>
+
+                <div class="options-container" id="optionsContainer">
+                    <!-- Options will be dynamically inserted here -->
+                </div>
+
+                <div class="feedback" id="feedback"></div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="previousQuestion()" id="prevBtn">← Zurück</button>
+                    <button class="btn btn-primary" onclick="submitAnswer()" id="submitBtn">Antwort bestätigen</button>
+                    <button class="btn btn-primary" onclick="nextQuestion()" id="nextBtn" style="display: none;">Weiter →</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Results Screen -->
+        <div id="resultsScreen" class="screen">
+            <div class="results-card">
+                <div class="results-icon" id="resultsIcon">🎉</div>
+                <h2 id="resultsTitle">Prüfung abgeschlossen!</h2>
+                
+                <div class="final-score">
+                    <div class="score-circle">
+                        <span class="score-percentage" id="scorePercentage">85%</span>
+                        <span class="score-label-result">Erreicht</span>
+                    </div>
+                </div>
+
+                <div class="results-details">
+                    <div class="result-item">
+                        <span class="result-label">Richtige Antworten:</span>
+                        <span class="result-value" id="correctAnswers">17</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Falsche Antworten:</span>
+                        <span class="result-value" id="wrongAnswers">3</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Gesamtpunkte:</span>
+                        <span class="result-value" id="finalScore">17</span>
+                    </div>
+                </div>
+
+                <div class="performance-message" id="performanceMessage">
+                    Ausgezeichnet! Du hast ein sehr gutes Verständnis der medizinischen Terminologie.
+                </div>
+
+                <div class="button-group">
+                    <button class="btn btn-secondary" onclick="reviewAnswers()">📝 Antworten überprüfen</button>
+                    <button class="btn btn-primary" onclick="restartExam()">🔄 Erneut versuchen</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Review Screen -->
+        <div id="reviewScreen" class="screen">
+            <div class="review-header">
+                <h2>📝 Antworten überprüfen</h2>
+                <button class="btn btn-secondary" onclick="backToResults()">← Zurück zu Ergebnissen</button>
+            </div>
+            <div id="reviewContainer" class="review-container">
+                <!-- Review items will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
