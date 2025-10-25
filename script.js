@@ -303,14 +303,110 @@ const questionBank = [
             "III. Behinderung der Lymphgefäße"
         ],
         explanation: "Ödeme entstehen durch Flüssigkeitsansammlung im Gewebe aus verschiedenen Ursachen",
-        points: 6
+        points: 6,
+        requiredKeywords: [
+            ["eiweiß", "protein", "mangel"],
+            ["druck", "hydrostatisch"],
+            ["lymph", "gefäß", "behinderung"]
+        ]
     },
     {
         type: "text-input",
         question: "Durch welche weiteren Parameter können Entzündungen erkannt werden bzw. welche Reaktionen zeigt der menschliche Organismus neben den 5 Merkmalen auf eine Entzündung?",
-        correctAnswers: ["Funktionseinschränkung", "Schmerz", "Fieber", "Müdigkeit"],
+        correctAnswers: ["Functio laesa", "gestörte Funktion", "Funktionseinschränkung"],
         explanation: "I. Functio laesa (gestörte Funktion), das Organ, Gewebe, etc.\nII. Dolor (Schmerz, ausgelöst durch Gewebsschmerzen)\nIII. Calor/Fieber (erhöhte Durchblutung)\nIV. Rubor (Rötung der betroffenen Stelle)",
-        points: 4
+        points: 4,
+        minKeywords: 1
+    },
+    {
+        type: "text-area",
+        question: "(6) Beschreiben Sie den Unterschied zwischen Transsudat und Exsudat.",
+        correctAnswers: ["Transsudat", "Exsudat", "Ödem", "Flüssigkeit", "Eiweiß", "Entzündung"],
+        modelAnswer: "Der Unterschied von Transsudat und Exsudat ist, dass Transsudat die Ödem-Flüssigkeit von Gewebe (ca 30 mm/L) und Exsudat mit (ca 50 mm/L) eines Transsudats hat dem spontanes Gewicht von unter 30 mm/L und Exsudat über 50 mm/L",
+        explanation: "Transsudat: eiweißarme Flüssigkeit (unter 30g/L)\nExsudat: eiweißreiche Flüssigkeit (über 50g/L)\nTranssudate entstehen durch erhöhten Druck, Exsudate durch Entzündungen",
+        points: 4,
+        minKeywords: 3
+    },
+    {
+        type: "text-list",
+        question: "(7) Der Thrombus ist für die Entstehung eines Thrombus verantwortlich. Dies wird auch als Virchowsche Trias bezeichnet. Nennen und erläutern Sie die 3 Hauptfaktoren:",
+        answers: 3,
+        examples: [
+            "I. Veränderung der Gefäßwand: Beschädigung der Gefäßinnenwand beschädigt werden, wenn z.B. Entzündung, Thrombus Beganshof",
+            "II. Veränderung der Lymphgefäße",
+            "III. Veränderung des Blutstroms im Blut: Blut kann zu langsam fließen oder deshalb sollte man bewegen"
+        ],
+        correctAnswers: ["Gefäßwand", "Blutströmung", "Blutzusammensetzung"],
+        explanation: "Die Virchowsche Trias:\n1. Veränderung der Gefäßwand (Endothelschädigung)\n2. Veränderung der Blutströmung (Verlangsamung)\n3. Veränderung der Blutzusammensetzung (Hyperkoagulabilität)",
+        points: 4,
+        requiredKeywords: [
+            ["gefäß", "wand", "endothel"],
+            ["strömung", "fluss", "langsam"],
+            ["zusammensetzung", "koagul", "gerinnung"]
+        ]
+    },
+    {
+        type: "text-area",
+        question: "(8) Erläutern Sie den Unterschied zwischen Thrombose und Embolie.",
+        correctAnswers: ["Thrombose", "Embolie", "Blutgerinnsel", "Verstopfung", "Gefäß"],
+        modelAnswer: "Thrombose: Bildung eines Blutgerinnsels im Gefäß, das den Vorgang des Körpers der Blutbildung. Nur wenn es das körperlich aufhört, hat Blut Schaden für die Betroffenen.\nEmbolie: Verstopfung der (Blut)gefäße (durch Zellen, dass ein Unterschied zwischen Thrombose und Embolie liegt also daran, dass Thrombose zur Blutstillung ein soll obwohl Embolie aufgrund ver Gefäße verstopft.",
+        explanation: "Thrombose: Entstehung eines Blutgerinnsels an Ort und Stelle im Blutgefäß\nEmbolie: Verstopfung eines Blutgefäßes durch eingeschwemmtes Material (z.B. losgelöster Thrombus)\nUnterschied: Thrombose entsteht lokal, Embolie ist verschlepptes Material",
+        points: 4,
+        minKeywords: 2
+    },
+    {
+        type: "text-list",
+        question: "(9) Hinsichtlich Tumorismus und Kapselsarkom werden der Begriff Hypertrophie und Hyperplasie voneinander abgegrenzt. Was bedeuten die jeweiligen Begriffe? Geben Sie zu jedem Begriff 1 Beispiel an.",
+        answers: 2,
+        examples: [
+            "I. Hypertrophie: Volumenszunahme eines Organs durch Größenzunahme der Zellen z.B. Muskelzellen",
+            "II. Hypoplasie: Verkleinerung des Organs durch Verminderung der Zellen"
+        ],
+        correctAnswers: ["Hypertrophie", "Hyperplasie", "Zellen", "Organ", "Größe", "Anzahl"],
+        explanation: "Hypertrophie: Vergrößerung eines Organs durch Größenzunahme der Zellen (z.B. Muskelzellen bei Training)\nHyperplasie: Vergrößerung eines Organs durch Vermehrung der Zellen (z.B. Prostatavergrößerung)",
+        points: 4,
+        requiredKeywords: [
+            ["hypertrophie", "größe", "zell"],
+            ["hyperplasie", "anzahl", "vermehrung"]
+        ]
+    },
+    {
+        type: "text-list",
+        question: "(10) Nennen Sie 5 Merkmale eines malignen Tumors und grenzen Sie diese von benignen ab.",
+        answers: 5,
+        examples: [
+            "I. Metastasierung",
+            "II. Schnelles Wachstum",
+            "III. Ähnlichkeit zu Muttergewebe (wenig ähnlich zu gesunden Muttergewebe)",
+            "IV. Keine Abgrenzung zum Muttergewebe",
+            "V. Verdrängend oder infiltrierend (Dringt in Muttergewebe)"
+        ],
+        correctAnswers: ["Metastasierung", "Wachstum", "infiltrierend", "Abgrenzung", "Ähnlichkeit"],
+        explanation: "Maligne (bösartige) Tumoren:\n1. Metastasierung möglich\n2. Schnelles, unkontrolliertes Wachstum\n3. Wenig Ähnlichkeit zu gesundem Gewebe\n4. Keine klare Abgrenzung (infiltrierend)\n5. Verdrängen und zerstören Gewebe\n\nBenigne Tumoren: Im Gegensatz dazu benigne ist der maligne nicht metastasierend und wächst langsam und ist der Regel langsam und meist nicht metastasierend",
+        points: 10,
+        requiredKeywords: [
+            ["metasta", "streuung"],
+            ["wachstum", "schnell"],
+            ["infiltr", "eindring"],
+            ["abgrenz", "kapsel"],
+            ["ähnlich", "differenz"]
+        ]
+    },
+    {
+        type: "text-list",
+        question: "(11) Nennen Sie 2 Formen (Wege) der Metastasierung mit jeweils einem Beispiel.",
+        answers: 2,
+        examples: [
+            "I. Lymphogene Metastasierung: Brustkrebs, Colonkarzinom",
+            "II. Hämatogene Metastasierung: Leukämie"
+        ],
+        correctAnswers: ["lymphogen", "hämatogen", "Blut", "Lymphe"],
+        explanation: "1. Lymphogene Metastasierung: Ausbreitung über Lymphgefäße (z.B. Brustkrebs)\n2. Hämatogene Metastasierung: Ausbreitung über Blutgefäße (z.B. Leukämie)\n\nWeitere Note: Auch grenzt er sich klar vom Muttergewebe ab und dringt nicht in dieses ein, was die Behandlung deutlich vereinfacht",
+        points: 4,
+        requiredKeywords: [
+            ["lymph", "lymphogen"],
+            ["hämat", "blut"]
+        ]
     }
 ];
 
@@ -365,6 +461,7 @@ function displayQuestion() {
     // Update question info
     const typeText = question.type === 'multiple-choice' ? 'Multiple Choice' : 
                      question.type === 'text-input' ? 'Offene Frage' :
+                     question.type === 'text-area' ? 'Ausführliche Antwort' :
                      question.type === 'text-list' ? 'Aufzählung' : 'Zuordnung';
     document.getElementById('questionType').textContent = typeText;
     document.getElementById('questionPoints').textContent = `+${question.points} Punkt${question.points > 1 ? 'e' : ''}`;
@@ -385,7 +482,7 @@ function displayQuestion() {
     
     if (question.type === 'multiple-choice') {
         displayMultipleChoice(question, optionsContainer);
-    } else if (question.type === 'text-input') {
+    } else if (question.type === 'text-input' || question.type === 'text-area') {
         displayTextInput(question, optionsContainer);
     } else if (question.type === 'text-list') {
         displayTextList(question, optionsContainer);
@@ -518,6 +615,7 @@ function submitAnswer() {
     const question = questions[currentQuestionIndex];
     let userAnswer = null;
     let isCorrect = false;
+    let validationResult = null; // Store validation details
     
     if (question.type === 'multiple-choice') {
         const selectedOption = document.querySelector('.option.selected');
@@ -540,17 +638,29 @@ function submitAnswer() {
             }
         });
         
-    } else if (question.type === 'text-input') {
+    } else if (question.type === 'text-input' || question.type === 'text-area') {
         const textAnswer = document.getElementById('textAnswer');
         if (!textAnswer || !textAnswer.value.trim()) {
             alert('Bitte geben Sie eine Antwort ein!');
             return;
         }
         userAnswer = textAnswer.value.trim();
-        // For open questions, give partial credit based on keywords
-        isCorrect = checkTextAnswer(userAnswer, question.correctAnswers);
+        
+        // For open questions, check based on keywords with minimum threshold
+        const minKeywords = question.minKeywords || Math.ceil(question.correctAnswers.length * 0.5);
+        validationResult = checkTextAnswer(userAnswer, question.correctAnswers, minKeywords);
+        isCorrect = validationResult.isCorrect;
+        const matchedCount = validationResult.matchedCount;
+        
         textAnswer.disabled = true;
         textAnswer.style.backgroundColor = '#f3f4f6';
+        
+        // Partial points based on matched keywords
+        if (!isCorrect && matchedCount > 0) {
+            const partialPoints = Math.floor((matchedCount / question.correctAnswers.length) * question.points);
+            score += partialPoints;
+            document.getElementById('scoreValue').textContent = score;
+        }
         
     } else if (question.type === 'text-list') {
         const inputs = document.querySelectorAll('.list-answer-input');
@@ -561,9 +671,29 @@ function submitAnswer() {
             return;
         }
         
-        // Give credit for each filled answer
-        const filledAnswers = userAnswer.filter(ans => ans.length > 0).length;
-        isCorrect = filledAnswers >= question.answers * 0.5; // At least 50% filled
+        // Check each answer against required keywords if provided
+        if (question.requiredKeywords) {
+            let correctCount = 0;
+            question.requiredKeywords.forEach((keywords, index) => {
+                if (userAnswer[index] && checkAnswerKeywords(userAnswer[index], keywords)) {
+                    correctCount++;
+                }
+            });
+            isCorrect = correctCount >= Math.ceil(question.requiredKeywords.length * 0.6);
+            
+            // Give partial points based on correct answers
+            const partialPoints = Math.floor((correctCount / question.requiredKeywords.length) * question.points);
+            if (partialPoints > 0 && !isCorrect) {
+                score += partialPoints;
+                document.getElementById('scoreValue').textContent = score;
+            }
+            validationResult = { correctCount, total: question.requiredKeywords.length };
+        } else {
+            // Give credit for each filled answer
+            const filledAnswers = userAnswer.filter(ans => ans.length > 10).length;
+            isCorrect = filledAnswers >= question.answers * 0.6;
+            validationResult = { filledAnswers, total: question.answers };
+        }
         
         inputs.forEach(input => {
             input.disabled = true;
@@ -597,14 +727,16 @@ function submitAnswer() {
         type: question.type
     };
     
-    // Update score
-    if (isCorrect) {
+    // Score has already been updated in the type-specific sections above
+    // Only update for fully correct answers that haven't been scored yet
+    if (isCorrect && question.type === 'multiple-choice') {
         score += question.points;
         document.getElementById('scoreValue').textContent = score;
-    } else if (question.type === 'text-list' || question.type === 'text-input') {
-        // Partial credit for open questions
-        const partialPoints = Math.floor(question.points * 0.5);
-        score += partialPoints;
+    } else if (isCorrect && (question.type === 'text-input' || question.type === 'text-area')) {
+        score += question.points;
+        document.getElementById('scoreValue').textContent = score;
+    } else if (isCorrect && question.type === 'text-list') {
+        score += question.points;
         document.getElementById('scoreValue').textContent = score;
     }
     
@@ -616,7 +748,25 @@ function submitAnswer() {
         if (isCorrect) {
             feedback.innerHTML = `<strong>✓ Richtig!</strong> ${question.explanation}`;
         } else {
-            feedback.innerHTML = `<strong>✗ Falsch!</strong> Die richtige Antwort ist: <strong>${question.options[question.correct]}</strong><br>${question.explanation}`;
+            feedback.innerHTML = `<strong>✗ Falsch!</strong> Die richtige Antwort ist: <strong>${question.options[question.correct]}</strong><br><br>${question.explanation}`;
+        }
+    } else if (question.type === 'text-input' || question.type === 'text-area') {
+        if (isCorrect) {
+            feedback.innerHTML = `<strong>✓ Sehr gut!</strong> Ihre Antwort enthält die wichtigsten Schlüsselbegriffe.<br><br><strong>Vollständige Erklärung:</strong><br>${question.explanation.replace(/\n/g, '<br>')}`;
+        } else {
+            const matchInfo = validationResult && validationResult.matchedCount > 0 
+                ? `<br><small>Sie haben ${validationResult.matchedCount} von ${question.correctAnswers.length} Schlüsselbegriffen erwähnt.</small>` 
+                : '';
+            feedback.innerHTML = `<strong>⚠️ Teilweise richtig</strong> ${matchInfo}<br><br><strong>Wichtige Punkte:</strong><br>${question.explanation.replace(/\n/g, '<br>')}`;
+        }
+    } else if (question.type === 'text-list') {
+        if (isCorrect) {
+            feedback.innerHTML = `<strong>✓ Gut gemacht!</strong> Ihre Antworten decken die wichtigsten Punkte ab.<br><br><strong>Vollständige Erklärung:</strong><br>${question.explanation.replace(/\n/g, '<br>')}`;
+        } else {
+            const detailInfo = validationResult && validationResult.correctCount !== undefined
+                ? `<br><small>${validationResult.correctCount} von ${validationResult.total} Antworten enthalten relevante Begriffe.</small>`
+                : '';
+            feedback.innerHTML = `<strong>⚠️ Ihre Antworten wurden gespeichert</strong>${detailInfo}<br>Vergleichen Sie Ihre Antworten mit den Beispielen:<br><br><strong>Musterlösungen:</strong><br>${question.explanation.replace(/\n/g, '<br>')}`;
         }
     } else {
         if (isCorrect) {
@@ -635,8 +785,8 @@ function submitAnswer() {
     }
 }
 
-// Check text answer for keywords
-function checkTextAnswer(userAnswer, correctAnswers) {
+// Check text answer for keywords with improved validation
+function checkTextAnswer(userAnswer, correctAnswers, minKeywords = null) {
     const userLower = userAnswer.toLowerCase();
     let matchCount = 0;
     
@@ -646,8 +796,19 @@ function checkTextAnswer(userAnswer, correctAnswers) {
         }
     });
     
-    // Consider correct if at least 50% of keywords are present
-    return matchCount >= correctAnswers.length * 0.5;
+    // Use provided minimum or calculate 50% threshold
+    const threshold = minKeywords !== null ? minKeywords : Math.ceil(correctAnswers.length * 0.5);
+    
+    return {
+        isCorrect: matchCount >= threshold,
+        matchedCount: matchCount
+    };
+}
+
+// Check if answer contains required keywords (at least one from the list)
+function checkAnswerKeywords(answer, keywords) {
+    const answerLower = answer.toLowerCase();
+    return keywords.some(keyword => answerLower.includes(keyword.toLowerCase()));
 }
 
 // Next question
